@@ -35,6 +35,7 @@ const Teams = () => {
                 <input type='submit' value='Add Team' onClick={addTeam} />
             </form>
             <ul>
+                { teams.length < 1 ? <h2>There are no teams</h2> : <h2></h2> }
                 {teams.map((name, id) => {
                     return (
                         <li key={id}>
